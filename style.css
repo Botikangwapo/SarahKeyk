@@ -327,8 +327,9 @@ header {
     max-width: 450px;
     padding: 1rem;
     background-color: #F8F8F8;
+    border-right: 5px solid #EB4C4C;
+    border-bottom: 5px solid #EB4C4C;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.178);
 }
 
 .gallerybox-body {
@@ -594,19 +595,20 @@ header {
     color: white;
 }
 
+
 /* beseller */
 
-.bessseller {
+.bessseller{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Outfit", sans-serif;
+     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
 }
 
-.seller-body-center {
+.seller-body-center{
     width: 90%;
     padding: 1rem;
     background-color: #ffffff;
@@ -615,14 +617,14 @@ header {
     justify-content: center;
 }
 
-.sellerbest-body {
+.sellerbest-body{
     width: 90%;
     background-color: #EB4C4C;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.tabseller {
+.tabseller{
     background-color: #FF7D7D;
     color: white;
     display: flex;
@@ -634,49 +636,49 @@ header {
     border-top-right-radius: 10px;
 }
 
-.best-sellery-option {
+.best-sellery-option{
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.moreview {
+.moreview{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
 }
 
-.beseller-body-card {
+.beseller-body-card{
     display: flex;
     overflow-x: auto;
     gap: 15px;
 }
 
-.seller-card {
+.seller-card{
     width: 100%;
     max-width: 300px;
-    background-color: #ffffff;
+    background-color: #ffffff   ;
     border-radius: 10px;
 }
 
-.seller-card-body {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.seller-card-body{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 
-.seller-card-body img {
+.seller-card-body img{
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
-    border-top-left-radius: 10px;
+      border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.seller-content {
+.seller-content{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -684,11 +686,11 @@ header {
 }
 
 
-.seller-content h2 {
+.seller-content h2{
     color: #49454F;
 }
 
-.seller-content h3 {
+.seller-content h3{
     color: #EB4C4C;
 }
 
@@ -848,3 +850,106 @@ header {
     }
 
 }
+
+/* BESTSELLER */
+.product-section {
+    background-color: #ff6b6b; 
+    padding: 25px; 
+    border-radius: 15px;
+    font-family: sans-serif;
+    color: white;
+    width: 200%;
+    max-width: 1360px;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.header-links {
+    margin-bottom: 20px;
+}
+
+.header-links span {
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px; 
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px; 
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.cake-card {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px; 
+    max-width: 400px; 
+    overflow: hidden;
+    padding-bottom: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px); 
+}
+
+.cake-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    background-color: #eee; 
+}
+
+.card-info {
+    padding: 15px; 
+    text-align: left; 
+}
+
+.card-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.price {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.buy-btn {
+    background-color:#ff6b6b; 
+    color: white;        
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.05);
+}
+
