@@ -160,6 +160,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-row: 2;
 }
 
 .hero-body {
@@ -598,17 +599,17 @@ header {
 
 /* beseller */
 
-.bessseller{
+.bessseller {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-     font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
 }
 
-.seller-body-center{
+.seller-body-center {
     width: 90%;
     padding: 1rem;
     background-color: #ffffff;
@@ -617,14 +618,14 @@ header {
     justify-content: center;
 }
 
-.sellerbest-body{
+.sellerbest-body {
     width: 90%;
     background-color: #EB4C4C;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.tabseller{
+.tabseller {
     background-color: #FF7D7D;
     color: white;
     display: flex;
@@ -636,49 +637,49 @@ header {
     border-top-right-radius: 10px;
 }
 
-.best-sellery-option{
+.best-sellery-option {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.moreview{
+.moreview {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
 }
 
-.beseller-body-card{
+.beseller-body-card {
     display: flex;
     overflow-x: auto;
     gap: 15px;
 }
 
-.seller-card{
+.seller-card {
     width: 100%;
     max-width: 300px;
-    background-color: #ffffff   ;
+    background-color: #ffffff;
     border-radius: 10px;
 }
 
-.seller-card-body{
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+.seller-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.seller-card-body img{
+.seller-card-body img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
-      border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.seller-content{
+.seller-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -686,19 +687,74 @@ header {
 }
 
 
-.seller-content h2{
+.seller-content h2 {
     color: #49454F;
 }
 
-.seller-content h3{
+.seller-content h3 {
     color: #EB4C4C;
 }
 
 /* Testimonial */
 
-.testimonial {
-    height: 900px;
+
+
+.testimonials {
+    text-align: center;
+    padding: 20px;
+
 }
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 10%;
+    padding: 20px;
+    background-color: rgb(12, 100, 71);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    margin: 20px;
+}
+
+.testimonial p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query */
 
@@ -849,7 +905,125 @@ header {
         width: auto;
     }
 
-}
+
+ 
+
+
+    /*footer*/
+
+    /* General Footer Styling */
+    .content-mv-box {
+        background-color: #e84a43;
+        /* The specific red from your image */
+        color: white;
+        padding: 60px 80px 20px 80px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Clean sans-serif */
+    }
+
+    .content-mv active {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    /* Sections */
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    /* Branding Column */
+    .brand-name {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-circle {
+        background-color: #ffc0cb;
+        /* Pinkish circle for the logo */
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .social-icons i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Navigation Links Column */
+    .links h3,
+    .contact h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .links ul li {
+        margin-bottom: 12px;
+    }
+
+    .links ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    /* Contact Column */
+    .contact p {
+        margin-bottom: 15px;
+        line-height: 1.4;
+        font-size: 0.95rem;
+    }
+
+    /* Bottom Bar */
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        /* Subtle divider */
+        padding-top: 20px;
+        font-size: 0.85rem;
+    }
+
+    .legal-links a {
+        color: white;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    .legal-links a:hover,
+    .links ul li a:hover {
+        text-decoration: underline;
+    }
+
+
 
 /* BESTSELLER */
 .product-section {
