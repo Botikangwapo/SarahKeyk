@@ -188,7 +188,7 @@ header {
 }
 
 .hero-body .left-content h1 {
-    font-size: clamp(24px, 8vw, 80px);
+    font-size: clamp(24px, 5vw, 80px);
     font-weight: 900;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -282,6 +282,7 @@ header {
     color: #49454F;
     text-align: center;
     line-height: 1.5rem;
+    font-size: clamp(1rem, 5vh, 1.5rem);
 }
 
 .features-body .card .card-body p {
@@ -692,6 +693,7 @@ header {
     color: #EB4C4C;
 }
 
+
 /* Testimonial */
 
 .testimonial {
@@ -699,6 +701,41 @@ header {
 }
 
 /* Media Query */
+@media (max-width: 1024px) {
+    .hero-body {
+        height: auto;
+    }
+
+    .hero-center-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-body .right-content img {
+        object-fit: contain;
+    }
+
+    .features-body {
+        height: auto;
+    }
+
+    .gallery-body-center {
+        height: auto;
+    }
+
+    .gallery-body {
+        width: 100%;
+    }
+
+    .gallerybox {
+        width: 240px;
+        max-width: 100%;
+        flex: 1 1 auto;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+
+}
 
 
 @media (max-width: 456px) {
