@@ -327,9 +327,8 @@ header {
     max-width: 450px;
     padding: 1rem;
     background-color: #F8F8F8;
-    border-right: 5px solid #EB4C4C;
-    border-bottom: 5px solid #EB4C4C;
     border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
 }
 
 .gallerybox-body {
@@ -597,17 +596,17 @@ header {
 
 /* beseller */
 
-.bessseller{
+.bessseller {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-     font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
 }
 
-.seller-body-center{
+.seller-body-center {
     width: 90%;
     padding: 1rem;
     background-color: #ffffff;
@@ -616,14 +615,14 @@ header {
     justify-content: center;
 }
 
-.sellerbest-body{
+.sellerbest-body {
     width: 90%;
     background-color: #EB4C4C;
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.tabseller{
+.tabseller {
     background-color: #FF7D7D;
     color: white;
     display: flex;
@@ -635,49 +634,49 @@ header {
     border-top-right-radius: 10px;
 }
 
-.best-sellery-option{
+.best-sellery-option {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.moreview{
+.moreview {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
 }
 
-.beseller-body-card{
+.beseller-body-card {
     display: flex;
     overflow-x: auto;
     gap: 15px;
 }
 
-.seller-card{
+.seller-card {
     width: 100%;
     max-width: 300px;
-    background-color: #ffffff   ;
+    background-color: #ffffff;
     border-radius: 10px;
 }
 
-.seller-card-body{
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+.seller-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.seller-card-body img{
+.seller-card-body img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
-      border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.seller-content{
+.seller-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -685,11 +684,11 @@ header {
 }
 
 
-.seller-content h2{
+.seller-content h2 {
     color: #49454F;
 }
 
-.seller-content h3{
+.seller-content h3 {
     color: #EB4C4C;
 }
 
