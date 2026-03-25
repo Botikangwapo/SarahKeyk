@@ -189,7 +189,7 @@ header {
 }
 
 .hero-body .left-content h1 {
-    font-size: clamp(24px, 5vw, 80px);
+    font-size: clamp(24px, 8vw, 80px);
     font-weight: 900;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -283,7 +283,6 @@ header {
     color: #49454F;
     text-align: center;
     line-height: 1.5rem;
-    font-size: clamp(1rem, 5vh, 1.5rem);
 }
 
 .features-body .card .card-body p {
@@ -692,44 +691,90 @@ header {
 }
 
 
+
 /* Testimonial */
 
-/* Media Query */
-@media (max-width: 1024px) {
-    .hero-body {
-        height: auto;
-    }
 
-    .hero-center-content {
-        width: 100%;
-        height: auto;
-    }
-
-    .hero-body .right-content img {
-        object-fit: contain;
-    }
-
-    .features-body {
-        height: auto;
-    }
-
-    .gallery-body-center {
-        height: auto;
-    }
-
-    .gallery-body {
-        width: 100%;
-    }
-
-    .gallerybox {
-        width: 240px;
-        max-width: 100%;
-        flex: 1 1 auto;
-        flex-shrink: 1;
-        flex-basis: auto;
-    }
-
+/* Footer */
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.footer-body {
+    width: 90%;
+    background-color: #e84a43;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content-center {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 2rem;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+.footer-right-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-body .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-section .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-icons .logo-circle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-section .logo-circle img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.footer-section .logo-circle i {
+    font-size: 2.5rem;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    color: white;
+}
+
+.footer-section ul a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Query */
 
 
 @media (max-width: 456px) {
@@ -872,10 +917,33 @@ header {
 
     .services-card-center {
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .services-card {
         width: auto;
+    }
+
+    .footer-body {
+        width: 100%;
+        height: 700px;
+    }
+
+    .footer-content-center {
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .footer-right-content {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .footer-section {
+        width: 100%;
     }
 
 }
@@ -883,26 +951,41 @@ header {
 
 /* BESTSELLER */
 .product-section {
-    background-color: #ff6b6b;
+    background-color: #ffffff;
     padding: 25px;
-    border-radius: 15px;
     font-family: sans-serif;
     color: white;
-    width: 200%;
-    max-width: 1360px;
+    width: 90%;
     margin: 0 auto;
-    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-body {
+    width: 90%;
+    background-color: #e84a43;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .header-links {
     margin-bottom: 20px;
+    background-color: #FF7070;
+    display: block;
+    padding: 1.3rem;
+    border-radius: 10px;
 }
 
 .header-links span {
     margin-right: 20px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .row-header {
@@ -915,14 +998,21 @@ header {
 .card-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: auto;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    padding-top: 10px;
+}
+
+.card-container::-webkit-scrollbar {
+    height: auto;
 }
 
 .cake-card {
     background-color: white;
     color: black;
     border-radius: 12px;
-    flex: 1;
     min-width: 200px;
     max-width: 400px;
     overflow: hidden;
