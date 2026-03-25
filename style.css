@@ -327,8 +327,8 @@ header {
     width: 100%;
     max-width: 450px;
     padding: 1rem;
-    background-color: #F8F8F8;
-    border: 1px solid rgba(0, 0, 0, 0.139);
+    background-color: #ffbaba1c;
+    border: 1px solid rgba(255, 22, 61, 0.127);
     border-radius: 10px;
 }
 
@@ -774,6 +774,16 @@ header {
     text-decoration: none;
 }
 
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom-body {
+    display: flex;
+    gap: 30px;
+}
+
 /* Media Query */
 
 
@@ -933,17 +943,30 @@ header {
     .footer-content-center {
         padding: 0;
         width: 100%;
+        gap: 30px;
     }
 
 
     .footer-right-content {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
 
     }
 
     .footer-section {
         width: 100%;
+    }
+
+    .footer-bottom {
+        width: 90%;
+    }
+
+    .footer-bottom .footer-bottom-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
     }
 
 }
