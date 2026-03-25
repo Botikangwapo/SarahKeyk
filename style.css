@@ -694,6 +694,130 @@ header {
 
 /* Testimonial */
 
+/* Product Bestseler */
+
+/* BESTSELLER */
+.product-section {
+    background-color: #ffffff;
+    padding: 25px;
+    font-family: sans-serif;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-body {
+    width: 90%;
+    background-color: #e84a43;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-links {
+    margin-bottom: 20px;
+    background-color: #FF7070;
+    display: block;
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+
+.header-links span {
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.card-container::-webkit-scrollbar {
+    height: auto;
+}
+
+.cake-card {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    min-width: 200px;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px);
+}
+
+.cake-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.card-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.price {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.buy-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
 
 /* Footer */
 .footer {
@@ -752,13 +876,19 @@ header {
     gap: 15px;
 }
 
-.footer-section .logo-circle img {
-    width: 50px;
+.footer-section .social-icons .social-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section .social-icons .social-logos img {
+    width: 40px;
     border-radius: 50%;
 }
 
 .footer-section .logo-circle i {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .footer-section ul {
@@ -941,7 +1071,7 @@ header {
     }
 
     .footer-content-center {
-        padding: 0;
+        padding: 0.8rem;
         width: 100%;
         gap: 30px;
     }
@@ -950,7 +1080,7 @@ header {
     .footer-right-content {
         flex-direction: column;
         gap: 30px;
-
+        width: 100%;
     }
 
     .footer-section {
@@ -958,7 +1088,7 @@ header {
     }
 
     .footer-bottom {
-        width: 90%;
+        width: 100%;
     }
 
     .footer-bottom .footer-bottom-body {
@@ -978,128 +1108,4 @@ header {
         width: 100%;
     }
 
-}
-
-
-/* BESTSELLER */
-.product-section {
-    background-color: #ffffff;
-    padding: 25px;
-    font-family: sans-serif;
-    color: white;
-    width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product-body {
-    width: 90%;
-    background-color: #e84a43;
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.header-links {
-    margin-bottom: 20px;
-    background-color: #FF7070;
-    display: block;
-    padding: 1.3rem;
-    border-radius: 10px;
-}
-
-.header-links span {
-    margin-right: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 13px;
-}
-
-.row-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-bottom: 15px;
-}
-
-.card-container {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    overflow-x: auto;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    padding-top: 10px;
-}
-
-.card-container::-webkit-scrollbar {
-    height: auto;
-}
-
-.cake-card {
-    background-color: white;
-    color: black;
-    border-radius: 12px;
-    min-width: 200px;
-    max-width: 400px;
-    overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-.cake-card:hover {
-    transform: translateY(-5px);
-}
-
-.cake-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background-color: #eee;
-}
-
-.card-info {
-    padding: 15px;
-    text-align: left;
-}
-
-.card-info h3 {
-    margin: 5px 0;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.card-info p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 15px;
-    line-height: 1.4;
-}
-
-.price {
-    color: #ff6b6b;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.buy-btn {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-.buy-btn:hover {
-    background-color: #f0f0f0;
-    transform: scale(1.05);
 }
