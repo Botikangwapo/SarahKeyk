@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
     body.classList.add("no-scroll")
     setTimeout(() => {
         loadermain.style.top = "-100%"
-         body.classList.remove("no-scroll")
+        body.classList.remove("no-scroll")
     }, 3000)
 })
 
