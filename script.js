@@ -2,7 +2,17 @@ const btntabs = document.querySelectorAll(".btnmv");
 const contenttabs = document.querySelectorAll(".content-mv");
 const serachbar = document.getElementById("searchbar");
 const result = document.getElementById("result");
+const body = document.body;
 
+// window loaded
+window.addEventListener('load', () => {
+    let loadermain = document.querySelector('.loader-main')
+    body.classList.add("no-scroll")
+    setTimeout(() => {
+        loadermain.style.top = "-100%"
+         body.classList.remove("no-scroll")
+    }, 3000)
+})
 
 // Dommanipulation scroll effect
 document.addEventListener("scroll", () => {
