@@ -13,7 +13,7 @@ body {
     user-select: none;
 }
 
-body.no-scroll {
+/* body.no-scroll {
     overflow: hidden;
     height: 100vh;
 }
@@ -27,11 +27,46 @@ body.no-scroll {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.loader-main h1 {
+    font-size: 120px;
+}
+
+.loader-main .aniimage {
+    position: fixed;
+    z-index: 200000;
+    opacity: 1;
+    transition: 1s;
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.loader-left {
+    width: 50%;
+    height: 100vh;
+    background-color: #e84a43;
+    position: fixed;
     left: 0;
     top: 0;
-    transition: 0.6s;
+    transition: 1s;
 }
+
+.loader-right {
+    width: 50%;
+    height: 100%;
+    background-color: #ff6b6b;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 1s;
+}
+
 
 .loader-box img {
     width: 100px;
@@ -66,7 +101,7 @@ body.no-scroll {
         transform: translateY(-400%);
         opacity: 0;
     }
-}
+} */
 
 .header-body {
     width: 100%;
@@ -382,8 +417,8 @@ header {
     width: 100%;
     max-width: 450px;
     padding: 1rem;
-    background-color: #ffbaba1c;
-    border: 1px solid rgba(255, 22, 61, 0.127);
+    background-color: #F8F8F8;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -746,10 +781,87 @@ header {
 }
 
 
-
 /* Testimonial */
+.testimonial-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 700px;
+}
 
-/* Product Bestseler */
+.testimonial-body {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testimonial-body .testimonial {
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.testover {
+    display: flex;
+    gap: 20px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.testimonial-content {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial h3 {
+    font-size: 1.4rem;
+    color: #49454F;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.testimonial span {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+.testimonial p {
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.stars {
+    font-size: 20px;
+    margin: 5px 0;
+    color: gold;
+
+}
+
+
 
 /* BESTSELLER */
 .product-section {
@@ -898,7 +1010,7 @@ header {
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    padding: 2rem;
+
     color: white;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -1163,6 +1275,12 @@ header {
     .product-body .cake-card img {
         height: 110px;
         width: 100%;
+    }
+
+    .testimonial-content {
+        width: 300px;
+        height: 500px;
+
     }
 
 }
