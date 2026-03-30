@@ -5,29 +5,26 @@ const result = document.getElementById("result");
 const body = document.body;
 
 // window loaded
-// window.addEventListener('load', () => {
-//     let loadermain = document.querySelector('.loader-main')
-//     let loaderleft = document.querySelector('.loader-left')
-//     let loaderright = document.querySelector('.loader-right')
-//     let aniimage = document.querySelector('.aniimage')
-//     body.classList.add("no-scroll")
+window.addEventListener('load', () => {
+    let loadermain = document.querySelector('.loader-main')
+    let loaderleft = document.querySelector('.loader-left')
+    let loaderright = document.querySelector('.loader-right')
+    let aniimage = document.querySelector('.aniimage')
+    body.classList.add("no-scroll")
+    setTimeout(() => {
+        aniimage.style.opacity = "0"
+    }, 1000)
 
-//     aniimage.addEventListener('click', () => {
-//         setTimeout(() => {
-//             aniimage.style.opacity = "0"
-//         }, 1000)
+    setTimeout(() => {
+        loadermain.style.top = "-100%"
+        body.classList.remove("no-scroll")
+    }, 3000)
 
-//         setTimeout(() => {
-//             loadermain.style.top = "-100%"
-//             body.classList.remove("no-scroll")
-//         }, 3000)
-
-//         setTimeout(() => {
-//             loaderleft.style.left = "-100%"
-//             loaderright.style.right = "-100%"
-//         }, 2000)
-//     })
-// })
+    setTimeout(() => {
+        loaderleft.style.left = "-100%"
+        loaderright.style.right = "-100%"
+    }, 2000)
+})
 
 // Dommanipulation scroll effect
 document.addEventListener("scroll", () => {
