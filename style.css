@@ -7,11 +7,13 @@
 
 html,
 body {
-    overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: #FFE8E8;
     user-select: none;
+    overflow-x: hidden;
 }
+
+
 
 /* body.no-scroll {
     overflow: hidden;
