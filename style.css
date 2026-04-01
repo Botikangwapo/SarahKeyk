@@ -20,6 +20,9 @@ body.no-scroll {
     height: 100vh;
 }
 
+
+/* Loader */
+
 .loader-main {
     width: 100%;
     height: 100%;
@@ -106,6 +109,9 @@ body.no-scroll {
         opacity: 0;
     }
 }
+
+
+/* Header */
 
 .header-body {
     width: 100%;
@@ -237,11 +243,16 @@ header {
     gap: 20px;
 }
 
-.head1 nav ul li a {
+.head1 nav ul a {
     text-decoration: none;
     color: #ffffff;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+}
+
+.head1 div i {
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 
 
@@ -313,8 +324,8 @@ header {
 .hero-body .left-content .buttons button {
     width: 100%;
     max-width: 180px;
-    padding: 0.8rem;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 10px;
     border: none;
 }
 
@@ -387,6 +398,9 @@ header {
     line-height: 1.5rem;
 }
 
+
+
+
 /* Gallery section */
 
 .gallery {
@@ -441,12 +455,17 @@ header {
 }
 
 .gallerybox {
-    width: 100%;
+    width: 45%;
     max-width: 450px;
     padding: 1rem;
     background-color: #F8F8F8;
     box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.gallerybox:hover {
+    transform: translateY(-8px);
+    transition: all 0.5s ease;
 }
 
 .gallerybox-body {
@@ -563,9 +582,9 @@ header {
     color: #ffffff;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    padding: 0.8rem;
+    padding: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .about-content-center .about-content .about-inputs input:nth-child(2) {
@@ -647,6 +666,8 @@ header {
 }
 
 
+
+
 /* Services Section */
 
 .services {
@@ -676,6 +697,11 @@ header {
     box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.1);
 }
 
+.services-card:hover {
+    transform: translateY(-8px);
+    transition: all 0.5s ease;
+}
+
 .services-card-body {
     display: flex;
     flex-direction: column;
@@ -703,11 +729,26 @@ header {
 }
 
 .services-card-body button {
+    width: 180px;
     padding: 0.8rem;
     background-color: #EB4C4C;
     border-radius: 10px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: none;
+
 }
+
+.services-card-body button i {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+
+
 
 
 /* beseller */
@@ -807,6 +848,9 @@ header {
 .seller-content h3 {
     color: #EB4C4C;
 }
+
+
+
 
 
 /* Testimonial */
@@ -917,7 +961,7 @@ header {
 .stars {
     font-size: 20px;
     margin: 5px 0;
-    color: gold;
+    color: #ff6b6b;
 
 }
 
@@ -930,6 +974,8 @@ header {
         transform: translateX(calc(-100% + 100vw));
     }
 }
+
+
 
 
 
@@ -1057,6 +1103,8 @@ header {
 }
 
 
+
+
 /* Footer */
 .footer {
     width: 100%;
@@ -1152,10 +1200,63 @@ header {
     gap: 30px;
 }
 
-/* Media Query */
 
+
+
+
+/* Media Query */
+@media (max-width: 1834px) {
+    .gallery .gallery-body-center {
+        height: auto;
+        padding-top: 5rem;
+        padding-bottom: 7rem;
+    }
+
+    .gallery .gallery-body-center .gallery-body .gallerybox {
+        height: auto;
+        width: 45%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero-section .hero-body {
+        height: auto;
+        padding-top: 12rem;
+    }
+
+    .hero-section .hero-body .hero-center-content .left-content h1 {
+        font-size: clamp(24px, 8vw, 60px);
+    }
+
+    .hero-section .hero-body .hero-center-content img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*  Gallery*/
+    .gallery .gallery-body-center {
+        height: auto;
+        padding-top: 5rem;
+        padding-bottom: 7rem;
+    }
+
+    .gallery .gallery-body-center .gallery-body {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery .gallery-body-center .gallery-body .gallerybox {
+        height: auto;
+        flex: 1 1 auto;
+    }
+
+}
 
 @media (max-width: 456px) {
+
+    /* Header */
     .head {
         border-radius: 0px 0px 10px 10px;
     }
@@ -1186,12 +1287,61 @@ header {
     }
 
     .head1 {
-        display: none;
+        position: fixed;
+        width: 300px;
+        transform: translateX(-300px);
+        left: 0;
+        top: 0;
+        gap: 10px;
+        align-items: flex-start;
+        height: 100vh;
+        background-color: #ffffff;
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0.3s ease;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
     }
+
+    .head1.open {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .head1 nav {
+        width: 100%;
+    }
+
+
+    .head1 nav ul {
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+
+    }
+
+    .head1 nav ul li {
+        padding: 0.8rem;
+        border-radius: 10px;
+        color: #49454F;
+    }
+
+    .head1 nav ul li:hover {
+        background-color: #EB4C4C;
+        color: white;
+    }
+
+    .head1 div i {
+        font-size: 1.5rem;
+        color: #49454F;
+        padding: 1rem;
+    }
+
+
+    /* Hero */
 
     .hero-body {
         height: auto;
-        padding-top: 7rem;
+        padding-top: 7rem !important;
     }
 
     .hero-body .right-content img {
@@ -1233,12 +1383,14 @@ header {
         font-size: 1.5rem;
     }
 
+
+
     /* Gallery */
 
     .gallery-body-center {
         height: auto;
         padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-bottom: 0 !important;
     }
 
     .gallery-body {
@@ -1262,7 +1414,10 @@ header {
     }
 
     /* About Us */
-
+    .about-body {
+        height: auto;
+        padding-top: 5rem;
+    }
 
     .about-content-center {
         flex-direction: column;
@@ -1289,10 +1444,13 @@ header {
         max-width: 100%;
     }
 
+
+
     /* Services */
 
     .services-body {
         height: auto;
+        padding-top: 5rem;
     }
 
     .services-card-center {
@@ -1304,6 +1462,9 @@ header {
     .services-card {
         width: auto;
     }
+
+
+
 
     /* fOOTER */
 
@@ -1341,6 +1502,11 @@ header {
         align-items: flex-start;
     }
 
+    /* Cake Cards */
+    .product-section {
+        padding-top: 5rem;
+    }
+
     .cake-card {
         height: auto;
     }
@@ -1349,6 +1515,8 @@ header {
         height: 110px;
         width: 100%;
     }
+
+    /* Testimonials */
 
     .testimonial-content {
         width: 300px;

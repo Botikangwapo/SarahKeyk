@@ -16,13 +16,13 @@
         href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Bungee&family=Changa+One:ital@0;1&family=Krona+One&family=Miniver&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sigmar&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="icon" href="image/628313668_1630552038265675_735309556789731096_n.jpg">
 </head>
 
 <body>
 
     <!-- Animation loader -->
-    <div class="loader-main">
+    <!-- <div class="loader-main">
         <img src="image/628313668_1630552038265675_735309556789731096_n.jpg" alt="">
         <img class="aniimage" src="image/download (22).png" alt="">
         <div class="loader-left">
@@ -31,7 +31,7 @@
         <div class="loader-right">
 
         </div>
-    </div>
+    </div> -->
 
     <!-- Headers -->
     <header>
@@ -49,10 +49,10 @@
                     <div class="search-division">
                         <input type="search" name="" id="searchbar" placeholder="Search">
                         <ul id="result">
-                            <li data-link="#gallery">Home</li>
-                            <li data-link="">About</li>
-                            <li data-link="">Galery</li>
-                            <li data-link="">Services</li>
+                            <li data-link="pages/gallery.html">Home</li>
+                            <li data-link="pages/about.html">About</li>
+                            <li data-link="pages/gallery.html">Gallery</li>
+                            <li data-link="pages/services.html">Services</li>
                         </ul>
                     </div>
                     <svg class="searchsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -67,26 +67,25 @@
             <div class="head1">
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="">Contact</a></li>
+                        <a href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about">
+                            <li>About us</li>
+                        </a>
+                        <a href="#services">
+                            <li>Services</li>
+                        </a>
+                        <a href="#gallery">
+                            <li>Gallery</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
                     </ul>
                 </nav>
                 <div>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_97_103)">
-                            <path
-                                d="M1.66675 1.66669H8.33341L12.8001 23.9834C12.9525 24.7507 13.3699 25.44 13.9793 25.9305C14.5887 26.4211 15.3512 26.6817 16.1334 26.6667H32.3334C33.1156 26.6817 33.8781 26.4211 34.4875 25.9305C35.0969 25.44 35.5143 24.7507 35.6667 23.9834L38.3334 10H10.0001M16.6667 35C16.6667 35.9205 15.9206 36.6667 15.0001 36.6667C14.0796 36.6667 13.3334 35.9205 13.3334 35C13.3334 34.0795 14.0796 33.3334 15.0001 33.3334C15.9206 33.3334 16.6667 34.0795 16.6667 35ZM35.0001 35C35.0001 35.9205 34.2539 36.6667 33.3334 36.6667C32.4129 36.6667 31.6667 35.9205 31.6667 35C31.6667 34.0795 32.4129 33.3334 33.3334 33.3334C34.2539 33.3334 35.0001 34.0795 35.0001 35Z"
-                                stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_97_103">
-                                <rect width="40" height="40" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
                 </div>
             </div>
         </div>
@@ -262,7 +261,7 @@
     <div class="about" id="about">
         <div class="about-body">
             <div class="about-content-center">
-                <img src="gridd image/637262911_2029348251256510_6529295619115925923_n.jpg" alt="">
+                <img src="image/637262911_2029348251256510_6529295619115925923_n.jpg" alt="">
                 <div class="about-content">
                     <h1>Our Sweet Story</h1>
                     <p>It Started in a small home kitchen with a passion for baking . Sarah Keyk was founded on the
@@ -300,7 +299,7 @@
 
 
     <!-- services -->
-    <div class="services">
+    <div class="services" id="services">
         <div class="services-body">
             <div class="services-card-center">
                 <div class="services-card">
@@ -313,7 +312,10 @@
                         <h2>Icing Cakes (with printable toppers)</h2>
                         <p>Sweet and smooth icing finish perfect for birthdays and casual celebrations.Custom printable
                             toppers allow you to add names, photos, or designs.</p>
-                        <button>View</button>
+                        <button>
+                            <span>View Details</span>
+                            <i class="fa-regular fa-circle-right"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="services-card">
@@ -326,7 +328,10 @@
                         <h2>Fondant Cakes</h2>
                         <p>Elegant fondant covering ideal for weddings, anniversaries, or formal events.Sculpted and
                             decorated into creative shapes and designs.</p>
-                        <button>View</button>
+                        <button>
+                            <span>View Details</span>
+                            <i class="fa-regular fa-circle-right"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -340,7 +345,10 @@
                         <h2>Specialty Tiered</h2>
                         <p>Multi-tiered cakes perfect for big celebrations. Customized designs, flavors,and decorations
                             to match your event theme.</p>
-                        <button>View</button>
+                        <button>
+                            <span>View Details</span>
+                            <i class="fa-regular fa-circle-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -378,7 +386,7 @@
                         <img src="Best seller images/bestseller2.jpg" alt="Cake">
                         <div class="card-info">
                             <h3>SARAH KEYK</h3>
-                            <p>Lorem lorem sinta buko ng papaya</p>
+                            <p>red cars</p>
                             <span class="price">TIG 225$</span>
                         </div>
                     </div>
@@ -387,7 +395,7 @@
                         <img src="Best seller images/bestseller3.jpg" alt="Cake">
                         <div class="card-info">
                             <h3>SARAH KEYK</h3>
-                            <p>Lorem lorem sinta buko ng papaya</p>
+                            <p>The baby boss</p>
                             <span class="price">TIG 225$</span>
                         </div>
                     </div>
@@ -413,7 +421,7 @@
                         <img src="Best seller images/bestseller2.jpg" alt="Cake">
                         <div class="card-info">
                             <h3>SARAH KEYK</h3>
-                            <p>Lorem lorem sinta buko ng papaya</p>
+                            <p>red car theme</p>
                             <span class="price">TIG 225$</span>
                         </div>
                     </div>
@@ -422,7 +430,7 @@
                         <img src="Best seller images/bestseller3.jpg" alt="Cake">
                         <div class="card-info">
                             <h3>SARAH KEYK</h3>
-                            <p>Lorem lorem sinta buko ng papaya</p>
+                            <p>The Boss baby theme  </p>
                             <span class="price">TIG 225$</span>
                         </div>
                     </div>
@@ -431,7 +439,7 @@
                         <img src="Best seller images/bestseller4.jpg" alt="Cake">
                         <div class="card-info">
                             <h3>SARAH KEYK</h3>
-                            <p>Lorem lorem sinta buko ng papaya</p>
+                            <p>butterfly theme</p>
                             <span class="price">TIG 225$</span>
                         </div>
                     </div>
@@ -498,10 +506,11 @@
                     </div>
                     <div class="testimonial">
                         <div class="testimonial-content">
-                            <img src="image/download.jpg" alt="">
-                            <p>Hindi lang siya aesthetic, masarap din talaga yung cake base. Soft and fluffy, halatang
-                                premium ang ingredients na ginamit. 10/10 recommend!</p>
-                            <h3>Ricardo Reyes</h3>
+                            <img src="image/b7457c0f-efa5-4ef0-9b01-2ffff90fa207.jpg" alt="">
+                            <p>
+                                Cutesie ng website very girly, suitable sa owner. Moist ang ang yummy ng cupcake. Hindi
+                                sobrang matamis hindi nakakaumay.</p>
+                            <h3>Reign Valerie Mercado</h3>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -514,9 +523,10 @@
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <img src="image/download.jpg" alt="">
-                            <p>Ordered a 2-tier wedding cake last month. On-time ang delivery at napaka-professional
-                                kausap. Naging highlight siya ng reception namin!</p>
-                            <h3>Anna Rivera</h3>
+                            <p>Wala akong alam sa commercial bakeries kasi home baker lang ako but isn't fake butter
+                                just margarine, fake cream is non dairy cream, fake cheese is processed cheese? They're
+                                substitutes but I wouldn't call them fake.</p>
+                            <h3>Paul Cyruz Sison</h3>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -529,8 +539,8 @@
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <img src="image/download.jpg" alt="">
-                            <p>Masarap ang cake nila hayuppp mapapamura ka sa sa sarap, Ganda pati ng mga design nila na
-                                para bang wla nang bukas jusskuuday
+                            <p>the best cake shop in binangonan, the cakes are delicious and the staff are very
+                                accommodating. I highly recommend Sarah Keyk for your cake needs!
                             </p>
                             <h3>Mark Jervin Villones</h3>
                             <div class="stars">
@@ -553,14 +563,14 @@
 
 
     <!--footer-->
-    <div class="footer">
+    <div class="footer" id="contact">
         <div class="footer-body">
             <div class="footer-content-center">
                 <div class="footer-right-content">
                     <div class="footer-section">
                         <div class="social-icons">
                             <div class="social-logos">
-                                <img src="gridd image/628313668_1630552038265675_735309556789731096_n.jpg"
+                                <img src="image/628313668_1630552038265675_735309556789731096_n.jpg"
                                     alt="Sarah Keyk Logo">
                                 <h2 class="brand-name">SARAH KEYK</h2>
                             </div>
