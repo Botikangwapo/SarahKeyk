@@ -5,15 +5,17 @@ const result = document.getElementById("result");
 const bars = document.querySelector(".bars");
 const head1 = document.querySelector(".head1");
 const removes = document.querySelectorAll("ul a");
+const mask = document.querySelector(".mask");
 
 bars.addEventListener("click", () => {
     head1.classList.add("open");
-    document.body.classList.add("no-scroll");
+    mask.classList.add("gows");
 });
 
 removes.forEach(item => {
     item.addEventListener("click", () => {
         head1.classList.remove("open");
+        mask.classList.remove("gows");
         document.body.classList.remove("no-scroll");
     });
 });

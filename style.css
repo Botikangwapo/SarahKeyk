@@ -13,7 +13,6 @@ body {
 }
 
 
-
 body.no-scroll {
     overflow: hidden;
     height: 100vh;
@@ -50,8 +49,6 @@ body.no-scroll {
     width: 120px;
     height: 120px;
 }
-
-
 
 .loader-left {
     width: 50%;
@@ -1299,12 +1296,39 @@ header {
         transition: transform 0.3s ease, visibility 0.3s ease;
         justify-content: flex-end;
         flex-direction: column-reverse;
+        z-index: 9999;
     }
 
     .head1.open {
         transform: translateX(0);
         visibility: visible;
     }
+
+    .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.274);
+        backdrop-filter: blur(5px);
+        z-index: 9998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    /* Eto yung kailangang palitan */
+    .mask.gows {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 
+    .head1::before.open {
+        visibility: visible;
+        background-color: #000;
+    } */
 
     .head1 nav {
         width: 100%;
