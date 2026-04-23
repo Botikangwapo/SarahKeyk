@@ -6,6 +6,20 @@ const bars = document.querySelector(".bars");
 const head1 = document.querySelector(".head1");
 const removes = document.querySelectorAll("ul a");
 const mask = document.querySelector(".mask");
+const openkesame = document.querySelector(".login-container ")
+const sign = document.querySelector(".sign")
+const faqcard = document.querySelectorAll(".faq-card")
+
+faqcard.forEach((card, index) => {
+    card.addEventListener("click", () => {
+        const fuckyou = document.querySelector(".faqp")
+        const svg = document.querySelector(".svg")
+        faqcard.forEach(card => {
+            card.classList.remove("bukasna");
+        });
+        fuckyou.classList.add("bukasna")
+    });
+});
 
 bars.addEventListener("click", () => {
     head1.classList.add("open");
@@ -49,8 +63,6 @@ btntabs.forEach((tab, index) => {
         contenttabs[index].classList.add('active')
 
     });
-
-
 });
 
 
