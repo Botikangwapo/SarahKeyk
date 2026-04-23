@@ -45,10 +45,13 @@
                     <path d="M4 12h16" />
                     <path d="M4 19h16" />
                 </svg>
-                <img src="image/628313668_1630552038265675_735309556789731096_n.jpg" alt="">
+                <div class="logos">
+                    <img src="image/628313668_1630552038265675_735309556789731096_n.jpg" alt="">
+                    <h1>Sarah keyk</h1>
+                </div>
                 <div class="inputs">
                     <div class="search-division">
-                        <input type="search" name="" id="searchbar" placeholder="Search">
+                        <input type="search" name="" id="searchbar" placeholder="Search pages....">
                         <ul id="result">
                             <li hre data-link="pages/gallery.html">Home</li>
                             <li data-link="pages/about.html">About</li>
@@ -56,13 +59,7 @@
                             <li data-link="pages/services.html">Services</li>
                         </ul>
                     </div>
-                    <svg class="searchsvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-search-icon lucide-search">
-                        <path d="m21 21-4.34-4.34" />
-                        <circle cx="11" cy="11" r="8" />
-                    </svg>
-                    <input type="button" value="Sign Up">
+                    <input class="sign" type="button" value="Sign Up">
                 </div>
             </div>
             <div class="head1">
@@ -92,12 +89,43 @@
         </div>
     </header>
 
+    <div class="login-container">
+        <div class="login-body">
+            <div class="login-image">
+                <img src="image/628313668_1630552038265675_735309556789731096_n.jpg" alt="Login Background">
+            </div>
+
+            <div class="login-content">
+                <form class="form-box">
+                    <h2>Welcome Back</h2>
+                    <p>Please enter your details to sign in.</p>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="login-btn">Sign In</button>
+
+                    <div class="form-footer">
+                        <span>Don't have an account? <a href="#">Sign up</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <div class="hero-section" id="home">
         <div class="hero-body">
             <div class="hero-center-content">
                 <div class="left-content">
-                    <h1>Custom Cakes Made with Love</h1>
+                    <h1>Custom Cakes <span>Made with Love</span></h1>
                     <p>We provide custom cakes made with love, because we know that the best celebrations deserve a
                         personal touch. By making every celebration sweeter with personalized cakes, we aim to bring a
                         smile to every guest and a sparkle to every party. From our kitchen to your table, every cake is
@@ -117,23 +145,26 @@
     <!-- Features -->
     <div class="features">
         <div class="features-body">
-            <div class="card">
-                <div class="card-body">
-                    <h1>Custom Design</h1>
-                    <p>Bring your ideas to life with our expert designer. any theme, color, or concept.</p>
+            <div class="features-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Custom Design</h1>
+                        <p>Bring your ideas to life with our expert designer. any theme, color, or concept.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1>Variety of Flavors</h1>
-                    <p>Different kinds of flavors including vanilla, chocolate, oreo and custom combinations</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Variety of Flavors</h1>
+                        <p>Different kinds of flavors including vanilla, chocolate, oreo and custom combinations</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1>Sizes & Servings</h1>
-                    <p>Available in 6×4, 7×4, and 8×4 single cakes, as well as 2-tier cakes — perfect for any occasion,
-                        from birthdays to weddings.</p>
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Sizes & Servings</h1>
+                        <p>Available in 6×4, 7×4, and 8×4 single cakes, as well as 2-tier cakes — perfect for any
+                            occasion,
+                            from birthdays to weddings.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,8 +176,6 @@
         <div class="gallery-body-center">
             <div class="head-gaallery">
                 <h1>Our Gallery Choose One</h1>
-                <p>Browse our gallery and choose one of Sarah Keyk’s handmade delights. From our humble home kitchen
-                    beginnings to treats crafted with quality and passion, every bite tells a story.</p>
             </div>
             <div class="gallery-body">
                 <div class="gallerybox">
@@ -210,12 +239,20 @@
     <div class="about" id="about">
         <div class="about-body">
             <div class="about-content-center">
-                <img src="image/637262911_2029348251256510_6529295619115925923_n.jpg" alt="">
+                <img src="image/Screenshot 2026-03-12 144927.png" alt="">
                 <div class="about-content">
                     <h1>Our Sweet Story</h1>
-                    <p>It Started in a small home kitchen with a passion for baking . Sarah Keyk was founded on the
-                        principles of cleanliness, quality ingredients, and the joy of sharing sweet moments. We
-                        believe that every cake tells a story, and we are honored to be part of yours.</p>
+                    <p>It started in a small home kitchen, where a simple passion for baking slowly grew into something
+                        much more meaningful. Sarah Keyk was founded on the principles of cleanliness, quality
+                        ingredients, creativity, and the joy of sharing sweet moments with others. What began as making
+                        homemade cakes for family and friends soon turned into a dedication to creating desserts that
+                        bring happiness to every special occasion. Every cake is made with care, using only carefully
+                        selected ingredients to ensure both beautiful design and delicious flavor.</p>
+                    <p>At Sarah Keyk, we believe that every cake tells a unique story. Whether it is for a birthday,
+                        wedding, anniversary, or a simple gathering, each creation is designed to reflect the emotions
+                        and memories behind the celebration. We see every order as more than just a dessert—it becomes
+                        part of someone’s treasured moment. Being trusted to create something meaningful for your most
+                        important days is an honor, and we are proud to help make those memories even sweeter.</p>
                     <div class="about-inputs">
                         <input type="button" value="View More">
                         <input type="button" value="Sign Up">
@@ -398,9 +435,6 @@
     </div>
 
 
-
-
-
     <!-- Testimonial -->
     <div class="testimonial-container">
         <div class="testimonial-body">
@@ -418,7 +452,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -449,7 +483,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -507,6 +541,111 @@
     </div>
 
 
+    <div class="faq">
+        <div class="faq-body">
+            <div class="faq-head">
+                <h1>Frequently Ask Question</h1>
+            </div>
+            <div class="faq-card">
+                <div class="faq-accor">
+                    <h1>What are the differences between your Icing, Fondant, and Tiered cakes?</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down-icon lucide-chevron-down svg">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+                <div class="faqp">
+                    <p>Icing Cakes: These have a smooth, creamy finish, perfect for classic and elegant designs.
+
+                        Fondant Cakes: These use a sugar dough to achieve a flawless, matte finish, ideal for intricate
+                        themes, characters, and custom shapes.
+
+                        Tiered Cakes: These are multi-layered cakes designed to be the centerpiece for grand events like
+                        weddings, debuts, and large birthdays.</p>
+                </div>
+
+            </div>
+            <div class="faq-card">
+                <div class="faq-accor">
+                    <h1>How do I choose the best finish for my design?</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+
+                <div class="faqp">
+                    <p>If you want something simple and classic, Icing is a great choice. If your design has specific
+                        characters, logos, or complex details, Fondant is usually the best option to achieve that look.
+                    </p>
+                </div>
+
+            </div>
+            <div class="faq-card">
+                <div class="faq-accor">
+                    <h1>How do I choose the best finish for my design?</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+
+                </h1>
+                <div class="faqp">
+                    <p>What are the differences between your Icing, Fondant, and Tiered cakes?</p>
+                </div>
+
+            </div>
+            <div class="faq-card">
+                <div class="faq-accor">
+                    <h1>What are the differences between your Icing, Fondant, and Tiered cakes?</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+                <div class="faqp">
+                    <p>Yes, all our cakes are professionally boxed and secured. We provide care instructions upon
+                        pick-up or delivery to ensure your cake stays in perfect condition until your event.</p>
+                </div>
+
+            </div>
+            <div class="faq-card">
+                <div class="faq-accor">
+                    <h1>How do I place an order?</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </div>
+                <div class="faqp">
+                    <p>Since our website is for browsing our designs, you can finalize your order by sending us a
+                        message through our Contact page. Please include your event date, preferred cake type
+                        (Icing/Fondant/Tiered), and any design photos (pegs) you have.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="embed-map-responsive">
+        <div class="map-body">
+            <div>
+
+            </div>
+            <div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=P.%20%20Gomez%20Street%20Libis%20Binangonan%20Rizal&t=p&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a
+                    href="https://brushjjaemu.net"
+                    style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">Brush
+                    Jjaemu</a></div>
+        </div>
+    </div> -->
 
 
     <!--footer-->
