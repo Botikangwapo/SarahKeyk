@@ -1163,15 +1163,13 @@ header {
 .faq-body {
     width: 90%;
     padding: 1rem;
-    height: auto;
+    height: 600px;
     gap: 15px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 .faq-head h1 {
@@ -1181,7 +1179,6 @@ header {
     font-optical-sizing: auto;
     font-weight: 800;
     color: #49454F;
-    text-align: center;
 }
 
 .faq-card {
@@ -1225,7 +1222,7 @@ header {
 }
 
 .faqp.bukasna {
-    display: block;
+    display: flex;
 }
 
 
@@ -1371,10 +1368,6 @@ header {
     /* feature */
     .features-center {
         position: relative;
-    }
-
-    .features-center .card {
-        height: 100%;
     }
 
     /*  Gallery*/
@@ -1566,7 +1559,7 @@ header {
         width: 100%;
         max-width: 90%;
         padding: 2rem;
-        height: 100%;
+        height: auto;
     }
 
     .features-body .card .card-body h1 {
@@ -2028,10 +2021,6 @@ header {
         color: #000000;
     }
 
-    .logos {
-        display: none;
-    }
-
     .head img {
         display: none;
     }
@@ -2270,10 +2259,6 @@ header {
         height: auto;
     }
 
-    .faq-accor h1 {
-        font-size: 1rem;
-    }
-
 
     /* fOOTER */
 
@@ -2441,4 +2426,8 @@ header {
 .map-body {
     width: 90%;
     padding: 1rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d47e09d0d65af8486345bcd6229df7cae9949b54

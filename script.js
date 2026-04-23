@@ -10,13 +10,14 @@ const openkesame = document.querySelector(".login-container ")
 const sign = document.querySelector(".sign")
 const faqcard = document.querySelectorAll(".faq-card")
 
-faqcard.forEach((card) => {
+faqcard.forEach((card, index) => {
     card.addEventListener("click", () => {
-        const duckyou = card.querySelector(".faqp");
-        const svg = card.querySelector(".svg");
-
-        duckyou.classList.toggle("bukasna");
-        svg.classList.toggle("active");
+        const fuckyou = document.querySelector(".faqp")
+        const svg = document.querySelector(".svg")
+        faqcard.forEach(card => {
+            card.classList.remove("bukasna");
+        });
+        fuckyou.classList.add("bukasna")
     });
 });
 
