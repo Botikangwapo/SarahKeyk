@@ -129,7 +129,7 @@ header {
 
 .head {
     width: 90%;
-    background-color: #ffffff;
+    background-color: #ffb3c6;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +145,7 @@ header {
 
 .logos h1 {
     font-size: 1.6rem;
-    color: #ff8fab;
+    color: #49454F;
     font-family: "Outfit", sans-serif;
 
 }
@@ -343,6 +343,7 @@ header {
     padding: 1rem;
     border-radius: 10px;
     background-color: #ffffff;
+    color: #49454F;
     border: none;
     font-size: 1rem;
 }
@@ -383,24 +384,40 @@ header {
 
 .features-center {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1350px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 0.7rem;
-    gap: 15px;
-    background-color: #ffc2d1;
+    gap: 25px;
+    background-color: #ff8fab;
     height: auto;
     position: absolute;
-    top: 87%;
+    top: 88%;
     border-radius: 10px;
 }
 
+.features-center h1 {
+    color: white;
+    font-size: clamp(1.8rem, 5vw, 2.3rem);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+.feature-col {
+    display: flex;
+    gap: 10px;
+
+}
+
 .features-body .card {
-    background-color: #ffffff;
+    background-color: #ffe5ec;
     width: 100%;
-    max-width: 450px;
+    max-width: 390PX;
     height: 100%;
+    min-height: 190px;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -411,7 +428,14 @@ header {
 .features-body .card .card-body {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
+    width: 100%;
+}
+
+.features-body .card .card-body img {
+    width: auto;
+    height: 200px;
+    display: block;
 }
 
 .features-body .card .card-body h1 {
@@ -564,7 +588,7 @@ header {
     width: 90%;
     height: auto;
     padding: 1rem;
-    background-color: #fafafa;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -576,6 +600,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    padding-top: 26rem;
 }
 
 .about-content-center img {
@@ -594,7 +619,7 @@ header {
 }
 
 .about-content-center .about-content h1 {
-    font-size: clamp(24px, 8vw, 80px);
+    font-size: clamp(24px, 8vw, 50px);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -635,6 +660,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #ff8fab;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .mv-sion .mission-vission {
@@ -660,21 +688,37 @@ header {
     color: #ff8fab;
 }
 
+.content-mv-box {
+    display: flex;
+    gap: 10px;
+}
+
 .mv-sion .content-mv {
-    background-color: #ff8fab;
+    background-color: #ffe5ec;
     padding: 1rem;
     border-radius: 10px;
     animation: opacity 0.5s ease;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.content-mv.active {
-    display: block;
+.mv-sion .content-mv p {
+    color: #474747;
 }
+
 
 .content-mv p {
     color: #ffffff;
     font-weight: 300;
+}
+
+.content-mv h3 {
+    font-size: clamp(24px, 8vw, 2 0px);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    color: #49454F;
 }
 
 .line {
@@ -727,12 +771,7 @@ header {
     padding: 1.5rem;
     background-color: #F8F8F8;
     border-radius: 20px;
-    border: 1px solid #3e3e3e;
-}
-
-.services-card:hover {
-    border-right: 5px solid #3d3d3d;
-    border-bottom: 5px solid #3e3e3e;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 .services-card:hover {
@@ -913,7 +952,7 @@ header {
 }
 
 .testimonial-body h1 {
-    font-size: clamp(24px, 8vw, 55px);
+    font-size: clamp(24px, 8vw, 50px);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -1162,11 +1201,12 @@ header {
     flex-direction: column;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background-color: #ffe5ec;
 }
 
 .faq-head h1 {
     padding-bottom: 2rem;
-    font-size: clamp(20px, 8vw, 55px);
+    font-size: clamp(20px, 8vw, 50px);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -1179,10 +1219,11 @@ header {
     border-radius: 10px;
     width: 800px;
     max-width: 90%;
-    border: 1px solid black;
+    box-shadow: 2px 0px 10px rgba(117, 117, 117, 0.1);
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #ffffff;
 }
 
 .faq-accor {
@@ -1197,11 +1238,19 @@ header {
     transition: all ease-in-out 0.5s;
 }
 
+.faq-accor:nth-child(1)svg.active {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.5s;
+}
+
+
+
 .faq-card h1 {
     font-size: 1.3rem;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     color: #49454F;
+    font-weight: 500;
 }
 
 .faqp {
@@ -1212,12 +1261,32 @@ header {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     color: #49454F;
+    font-weight: 300;
 }
 
 .faqp.bukasna {
     display: block;
 }
 
+
+/* Location */
+.map-center {
+    display: flex;
+    gap: 10px;
+}
+
+.location h1 {
+    font-size: clamp(20px, 8vw, 50px);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.location p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: #49454F;
+    font-weight: 300;
+}
 
 /* Footer */
 .footer {
@@ -1332,13 +1401,19 @@ header {
     justify-content: center;
 }
 
+.map-center {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .embed-map-container {
     width: 1000px;
 }
 
 .map-responsive {
     width: 100%;
-    max-width: 100%;
+    max-width: 800px;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -1424,6 +1499,15 @@ header {
     .features-center {
         position: relative;
     }
+
+    .hero-body .left-content h1 {
+        font-size: clamp(24px, 5vw, 40px) !important;
+        font-weight: 900;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        color: #49454F;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1577,6 +1661,10 @@ header {
         position: relative;
     }
 
+    .feature-col {
+        flex-direction: column;
+    }
+
     .features-body .card {
         width: 100%;
         max-width: 90%;
@@ -1631,12 +1719,13 @@ header {
     .about-content-center {
         flex-direction: column;
         width: auto;
+        padding-top: 0;
     }
 
     .about-content-center img {
         max-width: 100%;
-        height: 270px;
-        object-fit: cover;
+        height: 400px;
+        object-fit: fill;
     }
 
     .about-content-center .about-content {
@@ -2179,15 +2268,28 @@ header {
         padding: 1rem;
     }
 
+    .features-body h1 {
+        text-align: center;
+    }
+
     .features-center {
         flex-direction: column;
         width: 95%;
         position: relative;
     }
 
+
+
+    .feature-col {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+
+    }
+
     .features-body .card {
         width: auto;
-        padding: 2rem;
+        padding: 1rem;
         height: auto;
     }
 
@@ -2238,6 +2340,7 @@ header {
     .about-content-center {
         flex-direction: column;
         width: auto;
+        padding-top: 0;
     }
 
     .about-content-center img {
@@ -2258,6 +2361,11 @@ header {
     .mv-sion .mission-vission .btnmv {
         width: 100%;
         max-width: 100%;
+    }
+
+    .content-mv-box {
+        flex-direction: column;
+        gap: 10px;
     }
 
 

@@ -4,24 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Sarah Keyk</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&family=Bungee&family=Changa+One:ital@0;1&family=Krona+One&family=Miniver&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Spray+Paint&family=SN+Pro:ital,wght@0,200..900;1,200..900&family=Sigmar&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="../image/628313668_1630552038265675_735309556789731096_n.jpg">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
         .gallery-container {
-            max-width: 1200px;
+            width: 90%;
             margin: 0 auto;
-            padding: 20px;
-            padding-top: 100px;
+            padding: 1rem;
+            padding-top: 170px;
+            background-color: #ffff;
             /* To account for fixed header */
         }
 
@@ -116,6 +108,59 @@
 </head>
 
 <body>
+    <header>
+        <div class="header-body">
+            <div class="head">
+                <svg class="bars" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                </svg>
+                <div class="logos">
+                    <img src="image/628313668_1630552038265675_735309556789731096_n.jpg" alt="">
+                    <h1>Sarah keyk</h1>
+                </div>
+                <div class="inputs">
+                    <div class="search-division">
+                        <input type="search" name="" id="searchbar" placeholder="Search pages....">
+                        <ul id="result">
+                            <li hre data-link="pages/gallery.html">Home</li>
+                            <li data-link="pages/about.html">About</li>
+                            <li data-link="pages/gallery.html">Gallery</li>
+                            <li data-link="pages/services.html">Services</li>
+                        </ul>
+                    </div>
+                    <input class="sign" type="button" value="Sign Up">
+                </div>
+            </div>
+            <div class="head1">
+                <nav>
+                    <ul>
+                        <a href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about">
+                            <li>About us</li>
+                        </a>
+                        <a href="#services">
+                            <li>Services</li>
+                        </a>
+                        <a href="pages/gallery.html">
+                            <li>Gallery</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+                <div>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Include header if needed, but for simplicity, just the gallery -->
     <div class="gallery-container">
         <h1 class="gallery-title">Our Gallery</h1>
@@ -243,10 +288,7 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
