@@ -106,7 +106,7 @@ header {
 
 .head {
     width: 90%;
-    background-color: #ffb3c6;
+    background-color: #ffccd5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,7 +158,7 @@ header {
 
 .head input {
     padding: 0.8rem;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
 }
 
@@ -203,7 +203,7 @@ header {
 .head .inputs input:nth-child(2) {
     width: 130px;
     max-width: 100%;
-    background-color: #ff8fab;
+    background-color: #ff8fa3;
     color: #ffffff;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -211,7 +211,7 @@ header {
 
 .head1 {
     width: 90%;
-    background-color: #ff8fab;
+    background: linear-gradient(456deg, #ff8fa3, #ffb3c1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -296,11 +296,11 @@ header {
     font-size: 1.1rem;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     color: #49454F;
     text-align: left;
     font-weight: 300;
-
+    text-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero-body .left-content .buttons {
@@ -309,7 +309,7 @@ header {
 }
 
 .hero-body .left-content .buttons button:nth-child(1) {
-    background-color: #ff8fab;
+    background-color: #ff8fa3;
     color: #ffffff;
     border: none;
     font-size: 1rem;
@@ -319,7 +319,7 @@ header {
     width: 100%;
     max-width: 180px;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #ffffff;
     color: #49454F;
     border: none;
@@ -369,7 +369,7 @@ header {
     flex-direction: column;
     padding: 0.7rem;
     gap: 25px;
-    background-color: #ff8fab;
+    background-color: #ffccd5;
     height: auto;
     position: absolute;
     top: 88%;
@@ -377,7 +377,7 @@ header {
 }
 
 .features-center h1 {
-    color: white;
+    color: #49454F;
     font-size: clamp(1.8rem, 5vw, 2.3rem);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -391,11 +391,11 @@ header {
 }
 
 .features-body .card {
-    background-color: #ffe5ec;
+    background-color: #fff0f3;
     width: 100%;
     max-width: 390px;
     height: 100%;
-    min-height: 190px;
+    min-height: auto;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -408,12 +408,14 @@ header {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    height: auto;
 }
 
 .features-body .card .card-body img {
     width: auto;
     height: 200px;
-    display: block;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .features-body .card .card-body h1 {
@@ -432,125 +434,6 @@ header {
     text-align: left;
     line-height: 1.5rem;
 }
-
-
-
-
-/* Gallery section */
-
-.gallery {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.gallery-body-center {
-    width: 90%;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding: 1rem;
-    gap: 35px;
-    padding-top: 7rem;
-}
-
-.gallery-body-center .head-gaallery {
-    text-align: center;
-    width: 85%;
-}
-
-.gallery-body-center .head-gaallery h1 {
-    font-size: clamp(40px, 5vw, 55px);
-    font-family: Arial, Helvetica, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    color: #49454F;
-    margin-bottom: 8px;
-}
-
-.gallery-body-center .head-gaallery p {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    color: #49454F;
-    line-height: 1.5rem;
-}
-
-.gallery-body {
-    width: 90%;
-    height: auto;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallerybox {
-    width: 45%;
-    max-width: 450px;
-    padding: 1rem;
-    background-color: #ffff;
-    border-radius: 20px;
-    border: 1px solid black;
-}
-
-
-.gallerybox:hover {
-    transform: translateY(-8px);
-    transition: all 0.5s ease;
-}
-
-.gallerybox-body {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-image: url(image/f3c273f6-94de-46a8-85d1-2bee3d23c6a5.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-}
-
-.gallery-body img {
-    height: 250px;
-    width: 100%;
-    max-width: 150px;
-    object-fit: cover;
-}
-
-.gallerybox-content-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 220px;
-}
-
-.gallerybox-content-left {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.gallerybox-content-left h2 {
-    font-family: "SN Pro", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    color: #49454F;
-}
-
-.gallerybox-content-left p {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-}
-
-
 
 
 /* About */
@@ -584,8 +467,9 @@ header {
 .about-content-center img {
     width: 100%;
     max-width: 45%;
-    height: 700px;
+    height: 500px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .about-content-center .about-content {
@@ -609,7 +493,7 @@ header {
     font-weight: 300;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 .about-content-center .about-content .about-inputs {
@@ -617,22 +501,28 @@ header {
     gap: 15px;
 }
 
-.about-content-center .about-content .about-inputs button {
+.about-content-center .about-content .about-inputs a {
     width: 100%;
-    max-width: 180px;
-    background-color: #ff8fab;
+    max-width: 140px;
+    background-color: #ff8fa3;
     color: #ffffff;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     padding: 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-.about-content-center .about-content .about-inputs:nth-child(2) {
-    background-color: #ffffff;
-    color: #000;
+.about-content-center .about-content .about-inputs a button {
+    border: none;
+    background-color: transparent;
+    color: white;
 }
+
 
 .mv-sion {
     display: flex;
@@ -745,7 +635,7 @@ header {
     width: 100%;
     max-width: 450px;
     padding: 1.5rem;
-    background-color: #F8F8F8;
+    background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
 }
@@ -784,7 +674,7 @@ header {
 .services-card-body button {
     width: 180px;
     padding: 0.8rem;
-    background-color: #ff8fab;
+    background-color: #ff8fa3;
     border-radius: 10px;
     color: white;
     display: flex;
@@ -1037,7 +927,7 @@ header {
     background-color: #ffffff;
     padding: 25px;
     font-family: sans-serif;
-    color: white;
+    color: #49454F;
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
@@ -1048,7 +938,7 @@ header {
 
 .product-body {
     width: 90%;
-    background-color: #ffb3c6;
+    background-color: #fff0f3;
     border-radius: 10px;
     padding: 1rem;
     display: flex;
@@ -1061,7 +951,7 @@ header {
     display: block;
     padding: 1.3rem;
     border-radius: 10px;
-    background-color: #ff8fab;
+    background-color: #ffe5ec;
 }
 
 .header-links span {
@@ -1076,7 +966,8 @@ header {
     justify-content: space-between;
     padding: 0 10px;
     margin-bottom: 15px;
-
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .card-container {
@@ -1125,6 +1016,7 @@ header {
     margin: 5px 0;
     font-size: 18px;
     text-transform: uppercase;
+    color: #49454F;
 }
 
 .card-info p {
@@ -1305,7 +1197,7 @@ header {
 
 .footer-body {
     width: 90%;
-    background-color: #ff8fab;
+    background-color: #ff8fa3;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -2254,12 +2146,12 @@ header {
     .head1 nav ul li {
         padding: 0.8rem;
         border-radius: 10px;
-        color: #49454F;
+        color: white;
     }
 
     .head1 nav ul li:hover {
-        background-color: #ff8fab;
-        color: white;
+        background-color: #fff0f3;
+        color: #49454F;
     }
 
     .head1 div i {

@@ -35,16 +35,16 @@ removes.forEach(item => {
 
 
 // Dommanipulation scroll effect
-// document.addEventListener("scroll", () => {
-//     const head = document.querySelector('.head');
+document.addEventListener("scroll", () => {
+    const head = document.querySelector('.head');
 
-//     if (window.scrollY > 0) {
-//         head.classList.add("close")
-//     } else {
-//         head.classList.remove("close")
-//         result.classList.remove("hidden");
-//     }
-// });
+    if (window.scrollY > 0) {
+        head.classList.add("close")
+    } else {
+        head.classList.remove("close")
+        result.classList.remove("hidden");
+    }
+});
 
 
 window.addEventListener("load", function () {
