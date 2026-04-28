@@ -1300,7 +1300,7 @@ header {
     font-size: clamp(20px, 8vw, 50px);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-
+    color: #49454F;
 }
 
 .location h2 {
@@ -1578,7 +1578,7 @@ header {
     .head .bars {
         display: flex;
         margin-right: 8px;
-        color: #000000;
+        color: #ddd;
     }
 
     .head img {
@@ -1883,7 +1883,7 @@ header {
     .head .bars {
         display: flex;
         margin-right: 8px;
-        color: #000000;
+        color: #49454F;
     }
 
     .head img {
@@ -2187,7 +2187,7 @@ header {
     .head .bars {
         display: flex;
         margin-right: 8px;
-        color: #000000;
+        color: #49454F;
     }
 
     .logos {
