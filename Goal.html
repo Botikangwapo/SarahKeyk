@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Keyk | MVG Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top left, #fff0f3, #fce4ec, #f8bbd0);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* Para mapunta sa taas yung back button */
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- BACK BUTTON STYLE --- */
+        .back-nav {
+            width: 100%;
+            max-width: 1300px;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #ff8fab;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 10px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-back:hover {
+            background: #ff8fab;
+            color: #fff;
+            transform: translateX(-5px);
+            /* Arrow move effect */
+        }
+
+        .btn-back span {
+            font-size: 1.5rem;
+        }
+
+        /* --- MVG SECTION --- */
+        .mvg-section {
+            width: 1300px;
+            max-width: 100%;
+            padding: 20px;
+            margin-top: 60px;
+            /* Space para sa back button */
+        }
+
+        .mvg-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+            padding-top: 3rem;
+        }
+
+        .mvg-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 24px;
+            padding: 35px;
+            flex: 1;
+            width: auto;
+            box-shadow: 0 15px 35px rgba(240, 98, 146, 0.15);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .mvg-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 25px 50px rgba(240, 98, 146, 0.25);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon-box {
+            background: rgba(255, 255, 255, 0.5);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border-radius: 15px;
+        }
+
+        h3 {
+            color: #ff8fab;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        p {
+            color: #5d4037;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        @media (max-width: 1100px) {
+            .mvg-container {
+                justify-content: center;
+            }
+
+            .mvg-card {
+                flex: none;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .back-nav {
+                padding: 15px;
+            }
+
+
+            .mvg-container {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="back-nav">
+        <a href="index.html" class="btn-back">
+            <span>&larr;</span> Back to Home
+        </a>
+    </nav>
+
+    <section class="mvg-section">
+        <div class="mvg-container">
+            <div class="mvg-card">
+                <div class="card-header">
+                    <div class="icon-box">🎯</div>
+                    <h3>Mission</h3>
+                </div>
+                <p>To provide the Binangonan community with high-quality, handcrafted cakes that blend traditional
+                    flavors with modern creativity, ensuring every celebration is sweetened by excellence.</p>
+            </div>
+
+            <div class="mvg-card">
+                <div class="card-header">
+                    <div class="icon-box">👁️</div>
+                    <h3>Vision</h3>
+                </div>
+                <p>To be the leading cake destination in Rizal, recognized for innovation in baking and as a symbol of
+                    joy in every Filipino household.</p>
+            </div>
+
+            <div class="mvg-card">
+                <div class="card-header">
+                    <div class="icon-box">🚀</div>
+                    <h3>Goal</h3>
+                </div>
+                <p>To consistently deliver 100% customer satisfaction through premium ingredients, unique designs, and
+                    reliable service.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

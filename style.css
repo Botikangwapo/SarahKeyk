@@ -21,91 +21,68 @@ body.no-scroll {
 
 /* Loader */
 
-.loader-main {
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: fixed;
-    z-index: 100000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #ffffff;
-    top: 0;
-    left: 0;
-    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
-.loader-main img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.loader-content {
+    width: 300px;
+    text-align: center;
 }
 
-.loader-main .aniimage {
-    position: fixed;
-    z-index: 200000;
-    opacity: 1;
-    transition: 1s;
-    width: 120px;
-    height: 120px;
+.loader-content h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    color: #ff8fab;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.loader-left {
-    width: 50%;
-    height: 100vh;
-    background-color: #e84a43;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transition: 1s;
+/* Ang track ng progress bar */
+.progress-container {
+    width: 100%;
+    height: 12px;
+    background-color: #ffe5ec;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Para hindi lumampas ang bar sa kanto */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.loader-right {
-    width: 50%;
+/* Ang gumagalaw na bar */
+.progress-bar {
+    width: 0%;
     height: 100%;
-    background-color: #e84a43;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transition: 1s;
+    background: linear-gradient(90deg, #ff8fab, #fb6f92);
+    border-radius: 20px;
+    transition: width 0.4s ease;
+    /* Smooth na pag-usad */
 }
 
-
-.loader-box img {
-    width: 100px;
-    height: 100px;
-    animation-name: spin;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-direction: alternate;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-    object-fit: contain;
+.percentage {
+    display: block;
+    margin-top: 10px;
+    font-family: "Outfit", sans-serif;
+    color: #ff8fab;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg) translateY(0);
-        scale: 1;
-        border-radius: 0;
-        opacity: 1;
-    }
-
-    50% {
-        scale: 1.4;
-        border-radius: 0;
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    100% {
-        border-radius: 50%;
-        transform: translateY(-400%);
-        opacity: 0;
-    }
+/* Class para itago ang loader */
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
 }
-
 
 /* Header */
 
@@ -323,6 +300,7 @@ header {
     color: #49454F;
     text-align: left;
     font-weight: 300;
+
 }
 
 .hero-body .left-content .buttons {
@@ -639,7 +617,7 @@ header {
     gap: 15px;
 }
 
-.about-content-center .about-content input {
+.about-content-center .about-content .about-inputs button {
     width: 100%;
     max-width: 180px;
     background-color: #ff8fab;
@@ -651,7 +629,7 @@ header {
     border-radius: 10px;
 }
 
-.about-content-center .about-content .about-inputs input:nth-child(2) {
+.about-content-center .about-content .about-inputs:nth-child(2) {
     background-color: #ffffff;
     color: #000;
 }

@@ -46,22 +46,29 @@ removes.forEach(item => {
 //     }
 // });
 
-// tab nevigation for mision vision explain ko paba
-btntabs.forEach((tab, index) => {
-    tab.addEventListener('click', (e) => {
-        btntabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-        tab.classList.add('active');
 
-        var line = document.querySelector('.line')
-        line.style.width = e.target.offsetWidth + "px";
-        line.style.left = e.target.offsetLeft + "px";
+window.addEventListener("load", function () {
+    const progressBar = document.querySelector(".progress-bar");
+    const percentageText = document.querySelector(".percentage");
+    const loaderWrapper = document.querySelector(".loader-wrapper");
 
-        contenttabs.forEach(contents => (contents.classList.remove('active')))
-        contenttabs[index].classList.add('active')
+    let width = 0;
 
-    });
+    const interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval);
+
+            setTimeout(() => {
+                loaderWrapper.classList.add("loader-hidden");
+            }, 500);
+        } else {
+            width += Math.floor(Math.random() * 10) + 1;
+            if (width > 100) width = 100;
+
+            progressBar.style.width = width + "%";
+            percentageText.innerHTML = width + "%";
+        }
+    }, 150);
 });
 
 

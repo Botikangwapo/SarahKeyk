@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Keyk | Project Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* Realistic Background */
+            background: radial-gradient(circle at top left, #fff0f3, #fce4ec, #f8bbd0);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* --- TOP NAVIGATION (BACK TO HOME) --- */
+        .top-nav {
+            width: 100%;
+            max-width: 850px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .btn-go-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #ad1457;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 12px 24px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-go-home:hover {
+            background: #ad1457;
+            color: #ffffff;
+            transform: translateX(-8px);
+            box-shadow: 0 8px 20px rgba(173, 20, 87, 0.2);
+        }
+
+        /* --- INFO GLASS BOX --- */
+        .info-glass-box {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 35px;
+            max-width: 850px;
+            width: 100%;
+            padding: 60px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-header {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .badge {
+            background: #f06292;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .info-header h2 {
+            margin-top: 20px;
+            color: #880e4f;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        /* --- CONTENT AREA --- */
+        .info-content p {
+            color: #5d4037;
+            /* Warm dark brown for readability */
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            text-align: justify;
+            font-weight: 400;
+        }
+
+        .info-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Highlight text for realism */
+        .highlight {
+            color: #ad1457;
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .info-glass-box {
+                padding: 40px 25px;
+                border-radius: 25px;
+            }
+
+            .info-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .top-nav {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <a href="index.html" class="btn-go-home">
+            <span>&larr;</span> Go Home
+        </a>
+    </nav>
+
+    <section class="info-container">
+        <div class="info-glass-box">
+            <header class="info-header">
+                <span class="badge">Project Overview</span>
+                <h2>Deliciously Crafted <br> Digital Excellence</h2>
+            </header>
+
+            <div class="info-content">
+                <p>
+                    The <span class="highlight">Sarah Keyk</span> project is more than just a website; it is a
+                    professional digital transformation for a local bakeshop in Binangonan. By focusing on a
+                    user-centric design approach, we have created an environment where customers can explore a wide
+                    variety of customized cakes with ease and elegance.
+                </p>
+
+                <p>
+                    Built using a modern technology stack, the system ensures high-speed performance and <span
+                        class="highlight">responsive accessibility</span>. Whether accessed via a smartphone or a
+                    desktop, the interface maintains its visual integrity, showcasing intricate cake designs through
+                    high-resolution imagery and fluid layouts.
+                </p>
+
+                <p>
+                    Our mission is to provide a platform that mirrors the quality of the products it presents. Every
+                    line of code and every design element, from the soft <span class="highlight">glassmorphism
+                        effects</span> to the carefully selected typography, has been implemented to enhance the brand's
+                    identity as a leader in local customized celebrations.
+                </p>
+
+                <p>
+                    As we move forward, the system continues to evolve, integrating feedback from our community and
+                    technical insights from the <span class="highlight">University of Rizal System Binangonan</span>.
+                    This project stands as a benchmark for local business innovation, proving that technology and
+                    traditional craftsmanship can blend perfectly together.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
