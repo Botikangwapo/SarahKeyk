@@ -263,7 +263,7 @@ header {
     justify-content: center;
     padding: 1rem;
     padding-top: 10rem;
-    background-color: #ffe5ec;
+    background: radial-gradient(circle at top left, #fff0f3, #fce4ec, #f8bbd0);
 }
 
 .hero-center-content {
@@ -566,7 +566,7 @@ header {
     width: 90%;
     height: auto;
     padding: 1rem;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
     display: flex;
     justify-content: center;
     align-items: center;
