@@ -415,7 +415,7 @@ header {
 .features-body .card {
     background-color: #ffe5ec;
     width: 100%;
-    max-width: 390PX;
+    max-width: 390px;
     height: 100%;
     min-height: 190px;
     padding: 1.5rem;
@@ -660,8 +660,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #ff8fab;
-    padding: 1rem;
     border-radius: 10px;
 }
 
@@ -694,7 +692,7 @@ header {
 }
 
 .mv-sion .content-mv {
-    background-color: #ffe5ec;
+    background-color: #ff8fab;
     padding: 1rem;
     border-radius: 10px;
     animation: opacity 0.5s ease;
@@ -704,7 +702,7 @@ header {
 }
 
 .mv-sion .content-mv p {
-    color: #474747;
+    color: #ffffff;
 }
 
 
@@ -718,7 +716,7 @@ header {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
-    color: #49454F;
+    color: #ffe5ec;
 }
 
 .line {
@@ -1072,7 +1070,7 @@ header {
 
 .product-body {
     width: 90%;
-    background-color: #ff8fab;
+    background-color: #ffb3c6;
     border-radius: 10px;
     padding: 1rem;
     display: flex;
@@ -1082,10 +1080,10 @@ header {
 
 .header-links {
     margin-bottom: 20px;
-    background-color: #ffb3c6;
     display: block;
     padding: 1.3rem;
     border-radius: 10px;
+    background-color: #ff8fab;
 }
 
 .header-links span {
@@ -1100,6 +1098,7 @@ header {
     justify-content: space-between;
     padding: 0 10px;
     margin-bottom: 15px;
+
 }
 
 .card-container {
@@ -1116,11 +1115,12 @@ header {
 }
 
 .cake-card {
-    background-color: white;
+    background-color: #ffe5ec;
     color: black;
     border-radius: 12px;
-    min-width: 200px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 230px;
     overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
@@ -1132,6 +1132,7 @@ header {
 
 .cake-card img {
     width: 100%;
+    max-width: 300px;
     height: 200px;
     object-fit: cover;
     background-color: #eee;
@@ -1157,7 +1158,7 @@ header {
 }
 
 .price {
-    color: #ff6b6b;
+    color: #ff8fab;
     font-weight: bold;
     font-size: 16px;
 }
@@ -1172,6 +1173,21 @@ header {
     cursor: pointer;
     margin-top: 10px;
     transition: 0.3s;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details button {
+    padding: 0.3rem;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    background-color: #ff8fab;
+    color: white;
 }
 
 .buy-btn:hover {
@@ -1201,7 +1217,6 @@ header {
     flex-direction: column;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #ffe5ec;
 }
 
 .faq-head h1 {
@@ -1272,6 +1287,12 @@ header {
 /* Location */
 .map-center {
     display: flex;
+    gap: 15px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -1279,6 +1300,14 @@ header {
     font-size: clamp(20px, 8vw, 50px);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+
+}
+
+.location h2 {
+    font-size: clamp(20px, 8vw, 10px);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: #ff8fab;
 }
 
 .location p {
@@ -1447,6 +1476,10 @@ header {
     .features-center {
         position: relative;
     }
+
+    .about-content-center {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -1493,6 +1526,12 @@ header {
         flex: 1 1 auto;
     }
 
+    .about-content-center img {
+        width: 100% !important;
+        height: 100%;
+        border-radius: 10px;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -1506,6 +1545,25 @@ header {
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
         color: #49454F;
+    }
+
+    .about-content-center {
+        padding-top: 0;
+    }
+
+    .about-content {
+        width: 100% !important;
+    }
+
+    .about-content h1 {
+        font-size: clamp(24px, 5vw, 40px) !important;
+
+    }
+
+    .about-content-center img {
+        width: 100% !important;
+        height: 100%;
+        border-radius: 10px;
     }
 
 }
@@ -2445,6 +2503,13 @@ header {
 
     .product-body .cake-card img {
         height: 110px;
+        width: 100%;
+    }
+
+
+    /* location */
+    .map-center {
+        flex-direction: column;
         width: 100%;
     }
 
